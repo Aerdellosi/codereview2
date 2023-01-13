@@ -1,3 +1,11 @@
 .ninjaDiv {
     display: none;
 }
+
+.italic {
+    font-style: italic;
+}
+
+.makeBold {
+    font-weight: bolder;
+}
