@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>SUGGESTED PROGRAMMING LANGUAGE</h1>
-    <p>Hello user and welcome to The Suggested Programming Language Standardized Battery brought to you by Cloud in Head Games. This program will ask a series of questions to determine which programming language would be best suit you based on the answers you provide.</p>
+    <p>Hello user and welcome to <em>The Suggested Programming Language Standardized Battery Evaluation</em> (TSPLSBE) brought to you by Cloud in Head Games. This program will ask a series of questions to determine which programming language would be best suit you based on the answers you provide.</p>
     <h2>QUESTIONS:</h2>
     <form id="suggestedLanguageForm">
         <p>1) What is your response to the following statement: "It's inevitable that Machine Learning will replace human artists as the main creators of art."</p>
@@ -20,9 +20,18 @@
         <br>
         <label for="mlQuestion1Ambivalent">I'm ambivalent.</label>
         <input type="radio" name="mlQuestion1" id="mlQuestion1Ambivalent" value="mlQuestion1Ambivalent">
-    </form>
-    <form>
-        <p>Do you agree or disagree with the statement that "we all know engineers are illiterate"?</p>
+
+        <p>2) What is your response to the following statement: "It's inevitable that Machine Learning will replace human artists as the main <span class="makeBold">consumers</span> of art."</p>
+        <label for="mlQuestion2Enthused">I'm enthused.</label>
+        <input type="radio" name="mlQuestion2" id="mlQuestion2Enthused" value="mlQuestion2Enthused">
+        <br>
+        <label for="mlQuestion2Disgusted">I'm disgusted.</label>
+        <input type="radio" name="mlQuestion2" id="mlQuestion2Disgusted" value="mlQuestion2Disgusted">
+        <br>
+        <label for="mlQuestion2Ambivalent">I'm ambivalent.</label>
+        <input type="radio" name="mlQuestion2" id="mlQuestion2Ambivalent" value="mlQuestion2Ambivalent">
+    
+        <p>3) Do you agree or disagree with the statement that "we all know engineers are illiterate"?</p>
         <label for="illiterateQuestionIAgree">I agree.</label>
         <input type="radio" name="illiterateQuestion" id="illiterateQuestionIAgree" value="illiterateQuestionIAgree">
         <br>
@@ -31,9 +40,8 @@
         <br>
         <label for="illiterateQuestionIDK">I don't know.</label>
         <input type="radio" name="illiterateQuestion" id="illiterateQuestionIDK" value="illiterateQuestionIDK">
-    </form>
-    <form>
-        <p>On a scale of 0 to 2, how angry do you get when someone cuts you off in traffic?</p>
+    
+        <p>4) On a scale of 0 to 2, how angry do you get when someone cuts you off in traffic?</p>
         <label for="trafficQuestion0">0</label>
         <input type="radio" name="trafficQuestion" id="trafficQuestion0">
         <br>
@@ -42,6 +50,27 @@
         <br>
         <label for="trafficQuestion2">2</label>
         <input type="radio" name="trafficQuestion" id="trafficQuestion2">
+
+        <p>5) On a rainy day would you rather:</p>
+        <label for="rainyQuestionJogger">Race through the downpour like an 80s movie hero.</label>
+        <input type="radio" name="rainyQuestion" id="rainyQuestionJogger">
+        <br>
+        <label for="rainyQuestionCocoa">Drink hot cocoa.</label>
+        <input type="radio" name="rainyQuestion" id="rainyQuestionCocoa">
+        <br>
+        <label for="rainyQuestionQuestion">It's raining outside?</label>
+        <input type="radio" name="rainyQuestion" id="rainyQuestionQuestion">
+
+        <p>6) Do you prefer cats or dogs?</p>
+        <label for="dogsQuestion">Dogs.</label>
+        <input type="radio" name="dogsQuestion" id="dogsQuestion">
+
+        <br>
+        <br>
+        <button type="submit">submit</button>
+        
     </form>
+   
+
 </body>
 </html>
