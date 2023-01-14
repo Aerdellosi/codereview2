@@ -5,12 +5,10 @@ window.onload = function() {
     suggestedLanguageForm.addEventListener("submit", function(event) {
 
         event.preventDefault();
-        console.log(document.getElementById("mlQuestion1Enthused").value);
-        console.log(document.getElementById("mlQuestion1Enthused").checked);
-        console.log(document.getElementById("mlQuestion1Disgusted").checked);
 
+        /////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////BUSINESS_LOGIC1
         
-
         const q1CheckedA = document.getElementById("mlQuestion1Enthused").checked;
         const q1CheckedB = document.getElementById("mlQuestion1Disgusted").checked;
         const q1CheckedC = document.getElementById("mlQuestion1Ambivalent").checked;
@@ -99,11 +97,97 @@ window.onload = function() {
         console.log(sheepQuestion);
         console.log(dogsQuestion);
 
+        /////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////BUSINESS_LOGIC2
+
+        let pythonCounter = 0;
+        let jsCounter = 0;
+        let goCounter = 0;
+        let randomCounter = 3;
+
+        if (mlQuestion1 === "mlQuestion1Enthused") {
+            pythonCounter +=1;
+        } else if (mlQuestion1 === "mlQuestion1Disgusted") {
+            jsCounter += 1;
+        } else if (mlQuestion1 === "mlQuestion1Ambivalent") {
+            goCounter += 1;
+        }
+
+        if (mlQuestion2 === "mlQuestion2Enthused") {
+            jsCounter += 1;
+        } else if (mlQuestion2 === "mlQuestion2Disgusted") {
+            pythonCounter += 1;
+        } else if (mlQuestion2 === "mlQuestion2Ambivalent") {
+            goCounter += 1;
+        }
+
+        if (illiterateQuestion === "illiterateQuestionIAgree") {
+            pythonCounter += 1;
+        } else if (illiterateQuestion === "illiterateQuestionIDisagree") {
+            jsCounter += 1;
+        } else if (illiterateQuestion === "illiterateQuestionIDK") {
+            goCounter += 1;
+        }
+
+        if (trafficQuestion === "trafficQuestion0") {
+            pythonCounter += 1;
+        } else if (trafficQuestion === "trafficQuestion1") {
+            jsCounter += 1;
+        } else if (trafficQuestion === "trafficQuestion2") {
+            goCounter +=1;
+        }
+
+        if (rainyQuestion === "rainyQuestionJogger") {
+            goCounter += 1;
+        } else if (rainyQuestion === "rainyQuestionCocoa") {
+            jsCounter += 1;
+        } else if (rainyQuestion === "rainyQuestionQuestion") {
+            pythonCounter += 1;
+        }
+
+        if (sheepQuestion === "sheepQuestionYes") {
+            goCounter += 1;
+        } else if (sheepQuestion === "sheepQuestionNo") {
+            jsCounter += 1;
+        } else if (sheepQuestion === "sheepQuestionQuestion") {
+            pythonCounter += 1;
+        }
+
+        if (dogsQuestion === "dogsQuestion") {
+            if (pythonCounter > jsCounter && pythonCounter > goCounter) {
+                pythonCounter += 1;
+            } else if (jsCounter > pythonCounter && jsCounter > goCounter) {
+                jsCounter += 1;
+            } else if (goCounter > pythonCounter && goCounter > jsCounter) {
+                goCounter += 1;
+            } else {
+                randomCounter = Math.floor(Math.random * 3);
+            }
+        }
+
+
+        /////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////UI_LOGIC
+
+        if (pythonCounter > jsCounter && pythonCounter > goCounter) {
+            document.querySelector("span#spanToReplace").innerText = "Python";
+        } else if (jsCounter > pythonCounter && jsCounter > goCounter) {
+            document.querySelector("span#spanToReplace").innerText = "Javascript";
+        } else if (goCounter > pythonCounter && goCounter > jsCounter) {
+            document.querySelector("span#spanToReplace").innerText = "Go";
+        } else {
+            if (randomCounter === 0) {
+                document.querySelector("span#spanToReplace").innerText = "Python";
+            } else if (randomCounter === 1) {
+                document.querySelector("span#spanToReplace").innerText = "Javascript";
+            } else if (randomCounter === 2) {
+                document.querySelector("span#spanToReplace").innerText = "Go";
+            }
+        }
+        
+        document.querySelector("div.ninjaDiv").removeAttribute("class");
 
 
     });
-
-
-
 
 }
