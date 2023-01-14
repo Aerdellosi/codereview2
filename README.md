@@ -1,6 +1,6 @@
 # *The Suggested Programming Language Standardized Battery Evaluation* (TSPLSBE)  
 
-Our project will use quantessimalistic algorithm spiralling and a series of fill-in-the-dot questions to determine which programming language is best suited for the user. Upon completion of the program, the chosen language will be suggested to the user at the bottom of the page.
+This program will use quantessimalistic algorithm spiralling and a series of fill-in-the-dot questions to determine which programming language is best suited for the user. Upon completion of the program, the chosen language will be suggested to the user at the bottom of the page.
 
 The program's criteria are as follows: 
   * Those who are low in neuroticism and adventurousness, and who most agree with the statement 
