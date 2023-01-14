@@ -22,7 +22,6 @@ window.onload = function() {
     }
 
 
-
     if (mlQuestion2 === "mlQuestion2Enthused") {
         jsCounter += 1;
     } else if (mlQuestion2 === "mlQuestion2Disgusted") {
@@ -40,10 +39,6 @@ window.onload = function() {
         goCounter += 1;
     }
 
-    console.log("After illiterateQuestion");
-    console.log("Python = " + pythonCounter);
-    console.log("Js = " + jsCounter);
-    console.log("Go = " + goCounter);
 
 
     if (trafficQuestion === "trafficQuestion0") {
@@ -54,10 +49,6 @@ window.onload = function() {
         goCounter +=1;
     }
 
-    console.log("After trafficQuestion");
-    console.log("Python = " + pythonCounter);
-    console.log("Js = " + jsCounter);
-    console.log("Go = " + goCounter);
 
     if (rainyQuestion === "rainyQuestionJogger") {
         goCounter += 1;
@@ -67,10 +58,6 @@ window.onload = function() {
         pythonCounter += 1;
     }
 
-    console.log("After rainyQuestion");
-    console.log("Python = " + pythonCounter);
-    console.log("Js = " + jsCounter);
-    console.log("Go = " + goCounter);
 
     if (sheepQuestion === "sheepQuestionYes") {
         goCounter += 1;
@@ -80,11 +67,6 @@ window.onload = function() {
         pythonCounter += 1;
     }
 
-    console.log("After sheepQuestion");
-    console.log("Python = " + pythonCounter);
-    console.log("Js = " + jsCounter);
-    console.log("Go = " + goCounter);
-    //pythonCounter jsCounter goCounter
 
     if (dogsQuestion === "dogsQuestion") {
         if (pythonCounter > jsCounter && pythonCounter > goCounter) {
@@ -98,14 +80,6 @@ window.onload = function() {
         }
     }
 
-
-    //console.log
-
-
-    console.log("After questions");
-    console.log("Python = " + pythonCounter);
-    console.log("Js = " + jsCounter);
-    console.log("Go = " + goCounter);
 
     if (pythonCounter > jsCounter && pythonCounter > goCounter) {
         console.log("Congrats boi, eet ees Python");
@@ -122,7 +96,6 @@ window.onload = function() {
             console.log("It's Go, you absolute psychopath.")
         }
     }
-
 
 
 }
