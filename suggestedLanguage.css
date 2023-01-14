@@ -1,3 +1,16 @@
+.body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url(/matrix_rain.gif);
+    background-size: cover;
+}
+
+.mainDiv {
+    background-color: black;
+    color: white;
+    width: 1000px;
+
+}
+
 .ninjaDiv {
     display: none;
 }
@@ -8,6 +21,10 @@
 
 .makeBold {
     font-weight: bolder;
+}
+
+.spanToReplace {
+    font-family: 'Courier New', Courier, monospace;
 }
 
 /*make the span a diff font!!!! like a monospace font*/
