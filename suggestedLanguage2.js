@@ -190,4 +190,11 @@ window.onload = function() {
 
     });
 
+    resetButtonJs = document.getElementById("resetButton");
+
+    resetButtonJs.addEventListener("click", function () {
+
+        document.getElementById("ninjaDivID").setAttribute("class", "ninjaDiv");
+    });
+
 }
